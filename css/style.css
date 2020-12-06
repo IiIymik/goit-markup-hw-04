@@ -148,8 +148,13 @@ img {
 }
 .hero{
   background: #2F303A;
-  
-   
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+   rgba(47, 48,58, 0.4)
+   ), 
+  url(../images/hero/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main-heading {
   margin-right: 252px;
@@ -198,6 +203,27 @@ img {
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.feature-bg{
+background-color: #F5F4FA;
+height:120px;
+margin-bottom: 30px;
+}
+
+.feature-icon{
+  margin: 25px 100px;
+}
+/* .feature-item::before{
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+} */
+
+
 .feature-name {
   margin-bottom: 10px;
 
