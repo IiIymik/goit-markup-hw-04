@@ -3,6 +3,7 @@
   --accent-color: #2196f3;
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --icon-color: #AFB1B8;
 }
 
 
@@ -96,6 +97,17 @@ img {
   margin-left: auto;
  
 }
+.mail-logo{
+  display: inline-flex;
+  margin-right: 10px;
+  fill: #757575;
+}
+.tel-logo{
+  margin-right: 10px;
+  margin-left: 30px;
+  fill: #757575;
+}
+}
 .header-contact-tel {
   margin-left: 50px;
   margin-right: 0;
@@ -121,6 +133,13 @@ img {
 .current-nav {
   color: var(--accent-color);
 }
+ 
+.header-contact-mail:hover .mail-logo,
+.header-contact-mail:focus .mail-logo,
+.header-contact-tel:hover .tel-logo,
+.header-contact-tel:focus .tel-logo{
+  fill: var(--accent-color); 
+}
 .nav-list-link:hover,
 .nav-list-link:focus,
 .header-contact-mail:hover,
@@ -128,6 +147,7 @@ img {
 .header-contact-tel:hover,
 .header-contact-tel:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .header-contact-mail,
 .header-contact-tel {
@@ -295,7 +315,7 @@ display: flex;
   color: #212121;
 }
 .team-person-job {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
@@ -304,7 +324,76 @@ display: flex;
   letter-spacing: 0.03em;
   color: #757575;
 }
-/* ======================= Наша команда =====================*/
+.team-list-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+.team-link-icon{
+  fill: #AFB1B8;
+
+}
+.team-list-item{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+}
+.team-list-item:hover .team-link-icon,
+.team-list-item:focus .team-link-icon{
+  fill: #FFFFFF;
+}
+.team-list-item:hover,
+.team-list-item:focus{
+  background-color: var(--accent-color);
+}
+.team-list-item:not(:last-child){
+  margin-right: 10px;
+}
+
+/* ======================= Клиенты =====================*/
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+}
+.clients-title{
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.clients-list{
+  display: flex;
+  justify-content: space-between;
+}
+.clients-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color: var(--icon-color)
+}
+.clients-icon{
+  height: 50px;
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/* ======================= Клиенты =====================*/
 /* ======================= Подвал =====================*/
 
 .footer {
@@ -315,6 +404,10 @@ display: flex;
 .footer-item:not(:last-child){
   margin-bottom: 9px;
 }
+.footer .container{
+  display: flex;
+}
+
 .footer-contact-address {
   font-style: normal;
   font-weight: 500;
@@ -352,6 +445,56 @@ display: flex;
 }
 .logo-light > .logo-accent {
   color: var(--accent-color);
+}
+.adress-container{
+  margin-right: 70px  ;
+}
+.footer.container{
+  display: flex;
+  align-items: baseline;
+}
+.adress-title{
+  display: inline-block;
+  margin-top: 72px;
+ margin-bottom: 20px;
+ font-weight: 900;
+ font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.adress-list{
+  display: flex;
+  justify-content: space-between;
+}
+.adress-list-link{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+
+}
+.adress-link-icon{
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.adress-list-item:not(:last-child){
+  margin-right: 10px;
+}
+.adress-list-link:hover,
+.adress-list-link:focus{
+  background-color: var(--accent-color);
+}
+.adress-list-link:hover .adress-link-icon,
+.adress-list-link:focus .adress-link-icon{
+  fill: #ffffff;
+
 }
 /* ======================= Подвал =====================*/
 /* ======================= Главная страница =============*/
@@ -430,4 +573,5 @@ display: flex;
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 /* ======================= Список Портфолио =============== */
