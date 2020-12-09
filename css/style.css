@@ -45,6 +45,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -66,7 +68,7 @@ img {
   /* outline: 2px solid tomato; */
 }
 .section {
-  
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 /* ======================= Главная страница =============*/
@@ -162,11 +164,17 @@ img {
 /* ======================= Герой =====================*/
 
 .hero .container {
-  padding-left: 280px;
-  padding-top: 200px;
-  padding-bottom: 280px;
+  /* padding-left: 280px; */
 }
 .hero{
+  max-width: 1600px;
+  min-height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  text-align: center;
+
   background: #2F303A;
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
@@ -177,22 +185,22 @@ img {
   background-size: cover;
 }
 .main-heading {
-  margin-right: 252px;
-  margin-bottom: 30px;
-  
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-   color: #ffffff; 
+    width: 696px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-bottom: 30px;
+ 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff; 
 }
 .hero-btn {
-  align-items: center;
-  margin-left: 225px;
-  
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -214,8 +222,8 @@ img {
 /* ======================= Герой =====================*/
 /* ======================= Особености =====================*/
 .feature {
-  padding-top: 94px;
   
+  padding-bottom: 0;
 }
 .feature-list {
   display: flex;
@@ -264,7 +272,7 @@ margin-bottom: 30px;
 /* ======================= Особености =====================*/
 /* ======================= Чем мы занимаемся =====================*/
 .about {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .about-list {
   display: flex;
@@ -294,8 +302,8 @@ margin-bottom: 30px;
 display: flex;
 }
 .team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 .team-item{
   background-color: #FFFFFF;
@@ -525,7 +533,6 @@ background-color: rgba(255, 255, 255, 0.1);
   border-color: var(--accent-color)
   border-color: transparent;
 }
-/* ======================= Список Портфолио =============== */
 .radio-btn-list {
   margin-top: 94px;
   display: flex;
@@ -537,6 +544,8 @@ background-color: rgba(255, 255, 255, 0.1);
 .radio-btn-item{
   cursor: pointer;
 }
+/* ======================= Список Портфолио =============== */
+
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
@@ -550,7 +559,6 @@ background-color: rgba(255, 255, 255, 0.1);
   
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
-  box-sizing: border-box;
 }
 
 .portfolio-item:nth-child(3n){
@@ -572,6 +580,15 @@ background-color: rgba(255, 255, 255, 0.1);
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.portfolio-item:hover,
+.portfolio-item:focus{
+  background: #FFFFFF;
+border: 1px solid #EEEEEE;
+ box-shadow:
+ 0px 1px 1px rgba(0, 0, 0, 0.12),
+ 0px 4px 4px rgba(0, 0, 0, 0.06),
+ 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ======================= Список Портфолио =============== */
