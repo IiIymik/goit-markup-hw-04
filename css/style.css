@@ -535,7 +535,6 @@ background-color: rgba(255, 255, 255, 0.1);
   border-color: transparent;
 }
 .radio-btn-list {
-  /* margin-top: 94px; */
   display: flex;
   justify-content: center;
 }
@@ -550,7 +549,6 @@ background-color: rgba(255, 255, 255, 0.1);
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
-  /* margin-bottom: 94px; */
   margin-top: 50px;
 }
 .portfolio-item{
