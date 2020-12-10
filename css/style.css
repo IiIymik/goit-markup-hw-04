@@ -591,4 +591,31 @@ border: 1px solid #EEEEEE;
 .card-content{
   padding:20px 24px;
 }
+.portfolio-item-img-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  bottom: 0;  
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 63px 24px;
+  transition: transform 500ms linear;
+  transform: translateY(100%);
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+
+}
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay{
+  transform: translateY(0);
+}
 /* ======================= Список Портфолио =============== */
